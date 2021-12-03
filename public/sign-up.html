@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+</head>
+<body>
+
+    <!--email-->
+
+    <fieldset>
+        <legend> Registration </legend>
+
+    <div class="suemail">
+        <div class="suemail-container">
+            <span class="suemail">
+                <form action = "#" id="suemail">
+                    <div class="su-email">
+                        <label for="suemail"><E-mail>Email:</E-mail></label>
+                        <input type="text" id="suusername" name="suusername" 
+                        placeholder = 'email'required>
+                    </div>
+                  </form>
+                </span>
+        </div>
+
+    <!--username-->
+    
+    <div class="sucontainer">
+        <div class="suusername-container">
+            <span class="suusername">
+                <form action = "#" id="suusername">
+                    <div class="su-username">
+                        <label for="suusername">Username:</label>
+                        <input type="text" id="suusername" name="suusername" 
+                        placeholder = 'username'required>
+                    </div>
+                  </form>
+                </span>
+        </div>
+
+        <!--password-container-->
+
+        <div class="supassword-container">
+            <span class="supassword">
+                <form action = "#">
+                    <div class="su-password">
+                        <label for="pass">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="password: min 8 character"
+                               minlength="8" required>
+                    </div>
+                  </form>
+                </span>
+        </div>
+
+        <!--repeat-password-->
+
+        <div class="suconfirm-pwd-container">
+            <span class="suconfirm-pwd">
+                <form action = "#">
+                    <div class="suconfirm-pwd">
+                        <label for="confirm">Confirm-Password:</label>
+                        <input type="password" id="confirm_password" name="Confirm-Password" placeholder="Confirm-password"
+                               minlength="8" required>
+                    </div>
+                  </form>
+                </span>
+        </div>
+
+        <!--Checkboxes-->
+        
+        <!--student-->
+        <div class="student">
+        <label for="student"><input id="student" type="radio" name="slect"> Student</label>
+        </div>
+
+        <!--Teacher-->
+        <div class="teacher">
+            <label for="teacher"><input id="teacher" type="radio" name="slect">Teacher</label>
+            </div>
+
+        <!--Worker-->
+        <div class="worker">
+            <label for="worker"><input id="worker" type="radio" name="slect"> Worker</label>
+            </div>
+
+        <hr>
+            <!--Terms and Privacy-->
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <!--Registration buttom-->
+
+        
+        <button id="myBtn">Registration</button>
+
+            <!-- The Terms -->
+                <div id="myterms" class="terms">
+
+              <!-- terms content -->
+                <div class="terms-content">
+                  <span class="close">&times;</span>
+                    <p>Some text for the terms.</p>
+                 </div>
+                 <a href="r.html">terms and condition</a>
+                 <form action="#" id = "cross"></form>
+            <input type="checkbox"> Agree 
+
+
+            </div>
+            
+
+            <!--screen-->
+
+
+            
+
+
+    </fieldset>
+
+      <hr>
+      
+      <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </form>
+
+    </div>
+
+    <form method="POST" action="/reg">
+        <input name="login" type="text"/>
+        <input name='pwd'   type="password" />
+        <button type="submit">Регистрация</button>
+    </form>
+
+
+    <script src = "Event.js"></script>
+    <script src = "style.css"></script>
+</body>
+
+</html>
